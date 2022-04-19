@@ -1,5 +1,5 @@
-# Programmer : Sara  Afshar
-# Program : Calculator
+# Created by : Sara  Afshar
+# Program : simple Calculator
 # Delivery time : 1400/12/17
 #------------------------------------------
 
@@ -21,18 +21,18 @@ class Calculator :
         print('Power two numbers=',c)        
 
 print("--------------------------------")        
-a=float(input('plz enter num_one :')) 
-b=float(input('plz enter num_two :'))
-c=input('plz enter operato(+ ,-,*,/,^)  : ')
+num1=float(input('plz enter num_one :')) 
+num2=float(input('plz enter num_two :'))
+operator=input('plz enter operator(+ ,-,*,/,^)  : ')
 
-if c=='+':
-    print(Calculator.Add(a, b)) 
-elif c=='-':
-    print(Calculator.Minus(a, b))
-elif c=='*':
-    print(Calculator.Multiplication(a, b))
-elif c=='/':
-    print(Calculator.Division(a, b))
+if operator=='+':
+    Calculator.Add(num1, num2)
+elif operator=='-':
+    Calculator.Minus(num1, num2)
+elif operator=='*':
+    Calculator.Multiplication(num1, num2)
+elif operator=='/':
+    Calculator.Division(num1, num2)
 else:
-    print(Calculator.Power(a, b))
+    Calculator.Power(num1, num2)
 print("--------------------------------") 
